@@ -1,8 +1,23 @@
-.DS_Store
-node_modules
-/dist
 .history
+node_modules
+public
 
+src/assets
+src/components
+src/examples
+src/router
+src/store
+src/views
+
+App.vue
+index.js
+main.js
+.browserslistrc
+.gitignore
+babel.config.js
+jsconfig.json
+LICENSE
+vue.config.js
 
 # local env files
 .env.local

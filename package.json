@@ -1,13 +1,23 @@
 {
-  "name": "vue-prism",
-  "version": "0.1.0",
-  "private": true,
+  "name": "vue3-prism",
+  "author": "paranoiawhy",
+  "version": "0.1.2",
+  "private": false,
+  "keywords": [
+    "vue3",
+    "prism",
+    "component",
+    "elegant"
+  ],
+  "license": "MIT",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "s": "vue-cli-service serve",
+    "b": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --name Vue3Prism --dest lib src/index.js"
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "prismjs": "^1.28.0",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",
     "vuex": "^4.0.0"
