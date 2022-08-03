@@ -12,8 +12,11 @@ import Prism from "prismjs";
 // https://github.com/PrismJS/prism-themes/blob/master/themes/prism-a11y-dark.css
 import "./theme/prism-a11y-dark.css";
 
-import { ref } from "@vue/reactivity";
-import { onMounted } from "@vue/runtime-core";
+// import { ref } from "@vue/reactivity";
+
+// https://icode.best/i/57529645443554
+// import { onMounted } from "@vue/runtime-core";
+import { onMounted, ref } from "vue";
 
 export default {
     name: "Vue3Prism",

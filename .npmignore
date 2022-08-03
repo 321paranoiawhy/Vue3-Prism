@@ -5,6 +5,7 @@ public
 src/assets
 src/components
 src/examples
+src/plugin
 src/router
 src/store
 src/views

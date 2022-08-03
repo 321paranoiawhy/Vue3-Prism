@@ -1,7 +1,8 @@
 {
   "name": "vue3-prism",
-  "author": "paranoiawhy",
-  "version": "0.1.2",
+  "author": "321paranoiawhy",
+  "version": "0.1.4",
+  "description": "A project for displaying more beautiful and elegant code block in website based in Vue 3 and Prism.js.",
   "private": false,
   "keywords": [
     "vue3",
@@ -10,6 +11,14 @@
     "elegant"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/321paranoiawhy/Vue3-Prism.git"
+  },
+  "bugs": {
+    "url": "https://github.com/321paranoiawhy/Vue3-Prism/issues"
+  },
+  "homepage": "https://github.com/321paranoiawhy/Vue3-Prism#readme",
   "scripts": {
     "s": "vue-cli-service serve",
     "b": "vue-cli-service build",

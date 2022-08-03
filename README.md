@@ -2,6 +2,8 @@
 
 This is a project for displaying more beautiful and elegant code block in website based in [Vue 3](https://vuejs.org/) and [Prism.js](https://prismjs.com/).
 
+![](src/examples/images/bubbleSort.png)
+
 ## Clone Project
 
 ```
@@ -34,11 +36,15 @@ Reference:
 
 ## Examples
 
-[See Here](./src/examples)
+* [Replit](https://replit.com/@321paranoiawhy/Vue3-Prism#src/main.js)
+* [Code sandbox](https://codesandbox.io/s/vue3-prism-ltr01o?file=/src/main.js)
+
 
 # Usage
 
 ## Install
+
+[npm - vue3-prism](https://www.npmjs.com/package/vue3-prism)
 
 ```
 npm i vue3-prism
@@ -55,11 +61,10 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
-// import Vue3Prism.vue
-import Vue3Prism from 'vue3-prism/src/plugin/Vue3Prism.vue'
-const app = createApp(App)
-app.component('Vue3Prism', Vue3Prism)
-app.use(store).use(router).mount('#app')
+import Vue3Prism from 'vue3-prism/lib/Vue3Prism.common.js'
+import "vue3-prism/lib/Vue3Prism.css"
+
+createApp(App).use(store).use(router).use(Vue3Prism).mount('#app')
 ```
 
 As long as you have registered globally, then you can use `Vue3Prism` anywhere you want. It may just like this:
@@ -67,7 +72,7 @@ As long as you have registered globally, then you can use `Vue3Prism` anywhere y
 ```vue
 <!-- HelloWorld.vue -->
 <template>
-<!-- just pass source code in VuePrism component -->
+<!-- just pass source code in -->
     <Vue3Prism
         source="function bubbleSortFromStartToEnd(array) {
     const { length } = array;
@@ -97,38 +102,7 @@ Reference:
 
 ## Local Registration
 
-Take a look at this example:
-
-```vue
-<!-- HelloWorld.vue -->
-<template>
-<!-- just pass source code in VuePrism component -->
-    <Vue3Prism
-        source="function bubbleSortFromStartToEnd(array) {
-    const { length } = array;
-    for (let i = 0; i < length - 1; i++) {
-        for (let j = 0; j < length - i - 1; j++) {
-            if (array[j] > array[j + 1]) {
-                [array[j], array[j + 1]] = [array[j + 1], array[j]];
-            }
-        }
-    }
-    return array;
-}"
-    ></Vue3Prism>
-</template>
-
-<script>
-// import Vue3Prism.vue
-import Vue3Prism from 'vue3-prism/src/plugin/Vue3Prism.vue'
-export default {
-    name: "HelloWorld",
-    components: {
-        Vue3Prism,
-    }
-};
-</script>
-```
+To be continued...
 
 Reference:
 * [Vue.js - Local Registration](https://vuejs.org/guide/components/registration.html#local-registration)
